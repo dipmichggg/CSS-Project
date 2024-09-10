@@ -8,7 +8,7 @@
     <title>CSS Project</title>
     <link rel="stylesheet" href="All_CSS/style.css">
     <style>
-    /* flex for the whole page (divides it into all 5 parts) */
+    /* flex for the whole page (divides it into all 5 parts; just position of items) */
         .page {
             display: flex;
             flex-direction: column;
@@ -18,27 +18,79 @@
         .top_part {
             background-color: #1F2937;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            flex-grow: 4;
+            height: 450px;
         }
-    
+
+        /* left side */
+        .top_part .left_side {
+            display:flex;
+            flex-direction: column;
+            background-color: red;
+            width: 420px;
+        }
+
+        .top_part .left_side .upper_part {
+            justify-content: start;
+            align-items: start;
+            background-color: yellow;
+        }
+
+        .top_part .left_side .lower_part {
+            flex-wrap: wrap;
+            flex: auto;
+            justify-content: center;
+            align-items: center;
+            background-color: blue;
+        }
+
+        /* right side */
+        .top_part .right_side {
+           display:flex;
+           flex-direction: column;
+           background-color: green;
+           width: 420px;
+        }
+
+        .top_part .right_side .upper_part {
+            background-color: grey;
+        }
+
+        .top_part .right_side .lower_part {
+            flex: auto;
+            justify-content: center;
+            align-items: center;
+            background-color: orange;
+        }
+
     /* information part */
         .inf_part {
             background-color: white;
+
+            flex-grow: 4;
         }
 
     /* quotes part */
         .quote_part {
             background-color: #E5E7EB;
+
+            flex-grow: 4;
         }
 
     /* sign up part */
         .sign_part {
             background-color: white;
+
+            flex-grow: 3;
         }
 
     /* copyright part */
         .copy_part {
-            background-color: #1F2937
+            background-color: #1F2937;
+            
+            flex-grow: 1;
         }
     </style>
 </head>
@@ -46,15 +98,21 @@
     <div class="page">
         <!-- TOP PART -->
         <div class="top_part">
-            <div>
-                <div>Header Logo header link one header link two header link three</div>
+
+            <div class="left_side">
+                <div class="upper_part">Header Logo </div>            
+                <div class="lower_part">
+                    <div>This website is awesome</div>
+                    <div>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</div>
+                    <div><button>sign up</button></div>
+                </div>
             </div>
-            <div>
-                <div>This website is awesome</div>
-                <div>This webssite ahs some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</div>
-                <div><button>sign up</button></div>
-                <div>this is a placeholder for an image</div>
+
+            <div class="right_side">
+                <div class="upper_part">header link one&emsp;header link two&emsp;header link three</div>
+                <div class="lower_part">this is a placeholder for an image</div>                
             </div>
+
         </div>
         <!-- END OF TOP-->
         
