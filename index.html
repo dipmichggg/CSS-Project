@@ -4,44 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <title>CSS Project</title>
+    <link rel="stylesheet" href="All_CSS/style.css">
+    <style>
+    /* flex for the whole page (divides it into all 5 parts) */
+        .page {
+            display: flex;
+            flex-direction: column;
+        }
+
+    /* top part */
+        .top_part {
+            background-color: #1F2937;
+            display: flex;
+            flex-direction: column;
+        }
+    
+    /* information part */
+        .inf_part {
+            background-color: white;
+        }
+
+    /* quotes part */
+        .quote_part {
+            background-color: #E5E7EB;
+        }
+
+    /* sign up part */
+        .sign_part {
+            background-color: white;
+        }
+
+    /* copyright part */
+        .copy_part {
+            background-color: #1F2937
+        }
+    </style>
 </head>
 <body>
-    <!-- TOP PART -->
-    <div>
-        <div>Header Logo header link one header link two header link three</span></div>
-        <div><h2>This website is awesome</h2></div>
-        <div>This webssite ahs some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</div>
-        <div><button>sign up</button></div>
-        <div>this is a placeholder for an image</div>
-    </div>
-    <!-- END OF TOP-->
-    
-    <!-- Information part -->
-    <div>Some random information</div>
-    <div>
-        <div>
-            <div>this is some subtext under an illustration or image</div>
+    <div class="page">
+        <!-- TOP PART -->
+        <div class="top_part">
+            <div>
+                <div>Header Logo header link one header link two header link three</div>
+            </div>
+            <div>
+                <div>This website is awesome</div>
+                <div>This webssite ahs some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</div>
+                <div><button>sign up</button></div>
+                <div>this is a placeholder for an image</div>
+            </div>
         </div>
-    </div>
-    <!-- END of Information part-->
-    
-    <!-- QUOTE PART -->
-    <div>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actully read it. Who knows? All I know is that it looks great.</div>
-    <div>-Here, I was</div>
-    <!-- END OF QUOTE PART-->
+        <!-- END OF TOP-->
+        
+        <!-- Information part -->
+        <div class="inf_part">
+            <div>Some random information</div>
+            <div>
+                <div>
+                    <div>this is some subtext under an illustration or image</div>
+                </div>
+            </div>
+        </div>
+        <!-- END of Information part-->
+        
+        <!-- QUOTE PART -->
+        <div class="quote_part">
+            <div>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actully read it. Who knows? All I know is that it looks great.</div>
+            <div>-Here, I was</div>
+        </div>
+        <!-- END OF QUOTE PART-->
 
-    <!-- SIGN UP PART -->
-    <div>
-        <div>Call to action! It's time!</div>
-        <div>Sign up for our product by clicking that button right over there!</div>
-        <div><button>Sign up</button></div>
-    </div>
-    <!-- END OF SIGN UP PART-->
+        <!-- SIGN UP PART -->
+        <div class="sing_part">
+            <div>Call to action! It's time!</div>
+            <div>Sign up for our product by clicking that button right over there!</div>
+            <div><button>Sign up</button></div>
+        </div>
+        <!-- END OF SIGN UP PART-->
 
-    <!-- COPYRIGHT PART-->
-    <div>Copyright /C@ LekLek /infinity@</div>
-    <!-- END OF COPYRIGHT PART  -->
+        <!-- COPYRIGHT PART-->
+        <div class="copy_part">Copyright /C@ LekLek /infinity@</div>
+        <!-- END OF COPYRIGHT PART  -->
+    </div>
 </body>
 </html>
 
