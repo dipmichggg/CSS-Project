@@ -68,8 +68,33 @@
     /* information part */
         .inf_part {
             background-color: white;
-
+            display: flex;
+            flex-direction: column;
+            height: 500px;
             flex-grow: 4;
+        }
+
+        /* upper part */
+        .inf_part .upper_part {
+            background-color: red;
+            flex: auto;
+            height: 40px;
+        }
+
+        /* lower part */
+        .inf_part .lower_part {
+            background-color: blue;
+            display: flex;
+            flex: auto;
+            height: 410px;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .black_border {
+            border-style: solid;
+            border-width: 5px;
+            border-color: black;
         }
 
     /* quotes part */
@@ -118,11 +143,12 @@
         
         <!-- Information part -->
         <div class="inf_part">
-            <div>Some random information</div>
-            <div>
-                <div>
-                    <div>this is some subtext under an illustration or image</div>
-                </div>
+            <div class="upper_part">Some random information</div>
+            <div class="lower_part">
+                    <div class="black_border">this is some subtext under an illustration or image</div>
+                    <div class="black_border">this is some subtext under an illustration or image</div>
+                    <div class="black_border">this is some subtext under an illustration or image</div>
+                    <div class="black_border">this is some subtext under an illustration or image</div>
             </div>
         </div>
         <!-- END of Information part-->
