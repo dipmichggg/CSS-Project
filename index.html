@@ -10,7 +10,7 @@
     <style>
 
 
-    /* section used to keep track of the items borders in order to facilitate positioning */
+    /* section used to keep track of the items borders in order to facilitate positioning 
 
         .black_border {
             border-style: solid;
@@ -39,14 +39,12 @@
         .top_part .left_side {
             display:flex;
             flex-direction: column;
-            background-color: red;
-            width: 420px;
+            width: 440px;
         }
 
         .top_part .left_side .upper_part {
             justify-content: start;
             align-items: start;
-            background-color: yellow;
         }
 
         .top_part .left_side .lower_part {
@@ -55,19 +53,16 @@
             flex: auto;
             justify-content: center;
             align-items: center;
-            background-color: blue;
         }
 
         /* right side */
         .top_part .right_side {
            display:flex;
            flex-direction: column;
-           background-color: green;
-           width: 420px;
+           width: 440px;
         }
 
         .top_part .right_side .upper_part {
-            background-color: grey;
             display: flex;
             justify-content: end;
         }
@@ -75,9 +70,8 @@
         .top_part .right_side .lower_part {
             flex: auto;
             display: flex;
-            justify-content: center;
+            justify-content: end;
             align-items: center;
-            background-color: orange;
         }
 
     /* information part */
@@ -91,7 +85,6 @@
 
         /* upper part */
         .inf_part .upper_part {
-            background-color: red;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -101,7 +94,6 @@
 
         /* lower part */
         .inf_part .lower_part {
-            background-color: blue;
             display: flex;
             flex: auto;
             height: 410px;
@@ -124,6 +116,12 @@
             flex-wrap: wrap;
             height: 450px;
             flex-grow: 4;
+        }
+
+        .quote_part .quote_flex {
+            justify-content: center;
+            align-content: center;
+            width: 800px;
         }
 
     /* sign up part */
@@ -154,18 +152,18 @@
         <div class="top_part">
 
             <div class="left_side">
-                <div class="upper_part black_border">Header Logo </div>            
+                <div class="upper_part black_border header_logo top_margin">Header Logo </div>            
                 <div class="lower_part">
-                    <div class="black_border"><span>This website is awesome</span></br>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast<button>sign up</button></div>
+                    <div class="black_border"><span class="hero_main_text">This website is awesome</span></br><span class="header_link">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</span></br><button class="call_action_button">sign up</button></div>
                 </div>
             </div>
 
             <div class="right_side">
                 <div class="upper_part">
-                    <div class="black_border">header link one&emsp;header link two&emsp;header link three</div>
+                    <div class="black_border header_link top_margin">header link one&emsp;header link two&emsp;header link three</div>
                 </div>
                 <div class="lower_part">
-                    <div class="black_border">this is a placeholder for an image</div>
+                    <div class="black_border image_placeholder header_link">this is a placeholder for an image</div>
                 </div>                
             </div>
 
@@ -175,7 +173,7 @@
         <!-- Information part -->
         <div class="inf_part">
             <div class="upper_part">
-                <div class="black_border">Some random information</div>
+                <div class="black_border information_header">Some random information</div>
             </div>
             <div class="lower_part">
                 <div clas="inside">
@@ -196,7 +194,10 @@
         
         <!-- QUOTE PART -->
         <div class="quote_part">
-            <div class="black_border">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actully read it. Who knows? All I know is that it looks great.</br>-Here, I was</div>
+            <div class="quote_flex black_border">
+                <div class="quote_text">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actully read it. Who knows? All I know is that it looks nice.</div>
+                <div style="text-align: end">-Here, I was</div>
+            </div>
         </div>
         <!-- END OF QUOTE PART-->
 
@@ -209,7 +210,7 @@
 
         <!-- COPYRIGHT PART-->
         <div class="copy_part">
-            <div class="black_border">Copyright /C@ LekLek /infinity@</div>
+            <div class="black_border" style="color: white">Copyright ©️ LekLek ♾️</div>
         </div>
         <!-- END OF COPYRIGHT PART  -->
     </div>

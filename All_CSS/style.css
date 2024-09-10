@@ -16,6 +16,9 @@
 
 .call_action_button {
     background-color: #3882F6;
+    color: #F9FAF8;
+    font-size: 19px;
+    margin-top: 5px;
 }
 
 .information_header {
@@ -24,14 +27,20 @@
     font-weight: 900;
 }
 
-quote_text {
+.quote_text {
     font-size: 36px;
     color: #1F2937;
     font-style: italic;
 }
 
+.image_placeholder {
+    padding: 90px;
+    background-color: grey;
+}
 
-
+.top_margin {
+    margin-top: 5px;
+}
 
 
 
