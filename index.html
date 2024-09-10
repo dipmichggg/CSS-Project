@@ -8,6 +8,17 @@
     <title>CSS Project</title>
     <link rel="stylesheet" href="All_CSS/style.css">
     <style>
+
+
+    /* section used to keep track of the items borders in order to facilitate positioning */
+
+        .black_border {
+            border-style: solid;
+            border-width: 5px;
+            border-color: black;
+        } 
+    */
+
     /* flex for the whole page (divides it into all 5 parts; just position of items) */
         .page {
             display: flex;
@@ -39,6 +50,7 @@
         }
 
         .top_part .left_side .lower_part {
+            display: flex;
             flex-wrap: wrap;
             flex: auto;
             justify-content: center;
@@ -56,10 +68,13 @@
 
         .top_part .right_side .upper_part {
             background-color: grey;
+            display: flex;
+            justify-content: end;
         }
 
         .top_part .right_side .lower_part {
             flex: auto;
+            display: flex;
             justify-content: center;
             align-items: center;
             background-color: orange;
@@ -77,6 +92,9 @@
         /* upper part */
         .inf_part .upper_part {
             background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             flex: auto;
             height: 40px;
         }
@@ -89,17 +107,20 @@
             height: 410px;
             gap: 20px;
             justify-content: center;
+            align-items: start;
         }
 
-        .black_border {
-            border-style: solid;
-            border-width: 5px;
-            border-color: black;
+        .inf_part .lower_part .inside {
+            display: flex;
         }
+
 
     /* quotes part */
         .quote_part {
             background-color: #E5E7EB;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
             height: 450px;
             flex-grow: 4;
@@ -119,7 +140,10 @@
     /* copyright part */
         .copy_part {
             background-color: #1F2937;
-            
+            display: flex;
+            height:90px;
+            justify-content: center;
+            align-items: center;
             flex-grow: 1;
         }
     </style>
@@ -130,17 +154,19 @@
         <div class="top_part">
 
             <div class="left_side">
-                <div class="upper_part">Header Logo </div>            
+                <div class="upper_part black_border">Header Logo </div>            
                 <div class="lower_part">
-                    <div>This website is awesome</div>
-                    <div>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</div>
-                    <div><button>sign up</button></div>
+                    <div class="black_border"><span>This website is awesome</span></br>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast<button>sign up</button></div>
                 </div>
             </div>
 
             <div class="right_side">
-                <div class="upper_part">header link one&emsp;header link two&emsp;header link three</div>
-                <div class="lower_part">this is a placeholder for an image</div>                
+                <div class="upper_part">
+                    <div class="black_border">header link one&emsp;header link two&emsp;header link three</div>
+                </div>
+                <div class="lower_part">
+                    <div class="black_border">this is a placeholder for an image</div>
+                </div>                
             </div>
 
         </div>
@@ -148,20 +174,29 @@
         
         <!-- Information part -->
         <div class="inf_part">
-            <div class="upper_part">Some random information</div>
+            <div class="upper_part">
+                <div class="black_border">Some random information</div>
+            </div>
             <div class="lower_part">
+                <div clas="inside">
                     <div class="black_border">this is some subtext under an illustration or image</div>
+                </div>
+                <div clas="inside">
                     <div class="black_border">this is some subtext under an illustration or image</div>
+                </div>
+                <div clas="inside">
                     <div class="black_border">this is some subtext under an illustration or image</div>
+                </div>
+                <div clas="inside">
                     <div class="black_border">this is some subtext under an illustration or image</div>
+                </div>
             </div>
         </div>
         <!-- END of Information part-->
         
         <!-- QUOTE PART -->
         <div class="quote_part">
-            <div class="black_border">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actully read it. Who knows? All I know is that it looks great.</div>
-            <div class="black_border">-Here, I was</div>
+            <div class="black_border">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actully read it. Who knows? All I know is that it looks great.</br>-Here, I was</div>
         </div>
         <!-- END OF QUOTE PART-->
 
@@ -173,7 +208,9 @@
         <!-- END OF SIGN UP PART-->
 
         <!-- COPYRIGHT PART-->
-        <div class="copy_part">Copyright /C@ LekLek /infinity@</div>
+        <div class="copy_part">
+            <div class="black_border">Copyright /C@ LekLek /infinity@</div>
+        </div>
         <!-- END OF COPYRIGHT PART  -->
     </div>
 </body>
